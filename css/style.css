@@ -59,7 +59,7 @@ ul, li {
 }
 
 #contents {
-  padding: 100px 0;
+  /* padding: 100px 0; */
 }
 
 /*--------------------------------
@@ -76,7 +76,9 @@ ul, li {
   -webkit-align-items: center;
   -ms-align-items: center;
   align-items: center;
-  height: 380px;
+  height: 480px;
+  background-size:contain;
+  background: url(../img/header/rustic-3441673_1920.jpg) center center;
 }
 
 #header .logo {
@@ -99,16 +101,17 @@ ul, li {
 #header .logo-title {
   font-family: 'Oswald', sans-serif;
   font-size: 94px;
-  color: #f39ac7;
+  color: #fff;
   line-height: 1;
   letter-spacing: -2px;
 }
 
 #header .logo-desc {
   display: block;
-  font-size: 16px;
+  font-size: 36px;
   text-align: center;
-  margin-top: 5px;
+  margin-top: 30px;
+  color: #fff;
 }
 
 /*--------------------------------
@@ -145,6 +148,7 @@ ul, li {
 #gnav li a {
   color: #333;
   letter-spacing: -0.01em;
+  margin-left: 12px;
 }
 
 #gnav.fixed {
@@ -164,7 +168,8 @@ ul, li {
 ---------------------------------*/
 
 .section .inner {
-  padding: 80px 10px;
+  /* padding: 80px 10px; */
+  padding: 80px 10px 10px 0px;
 }
 
 .section .section-title-block {
@@ -179,7 +184,7 @@ ul, li {
   font-size: 56px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #f39ac7;
+  color: #444;
 }
 
 .section .section-desc {
@@ -323,10 +328,18 @@ ul, li {
 
 #skill .skill-desc {
   flex-basis: calc(100% - 75px - 30px);
+  text-align: center;
 }
 
 #skill .skill-desc-title {
   margin-bottom: 3px;
+  font-size:26px;
+  padding: 24px;
+  font-weight: bold;
+}
+
+#skill .skill-desc-title i{
+  margin-right: 12px;
 }
 
 #skill .rate {
@@ -352,7 +365,7 @@ ul, li {
 }
 
 #skill .rate:after {
-  color: #e8629f;
+  color: #808080;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -602,4 +615,12 @@ ul, li {
     -webkit-border-radius: 50%;
     object-fit: cover; /* ADD */
  }
+}
+
+.section-title-css{
+  margin-left: 12px;
+}
+
+.table{
+  text-align: center;
 }
