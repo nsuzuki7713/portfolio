@@ -77,7 +77,7 @@ ul, li {
   -ms-align-items: center;
   align-items: center;
   height: 480px;
-  background-size:contain;
+  background-size: auto 100%;
   background: url(../img/header/rustic-3441673_1920.jpg) center center;
 }
 
@@ -244,10 +244,15 @@ ul, li {
 #works .card-image {
   display: block;
   margin-bottom: 8px;
+  height: 245px;
+}
+
+#works .card-caption {
+  text-align: center;
 }
 
 #works .card-caption-title {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -424,6 +429,7 @@ ul, li {
 #contact .contact-list li img {
   width: 60px;
   margin: 0 auto 5px;
+  border-radius:50%;
 }
 
 #contact .contact-list-desc {
@@ -617,10 +623,30 @@ ul, li {
  }
 }
 
+.profile img {
+  border-radius: 50%;
+}
+
+.contact-img{
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    object-fit: cover; /* ADD */
+}
+
 .section-title-css{
   margin-left: 12px;
 }
 
 .table{
   text-align: center;
+}
+
+@media only screen and (max-width: 540px) {
+  #gnav li {
+    font-size: 8px;
+  }
 }
