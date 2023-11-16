@@ -1,19 +1,24 @@
 .header {
   position: fixed;
-  left: 37%;
+  width: 100%;
+  background-color: #19211a;
+  height: 50px;
   z-index: 100;
   &__inner {
+    height: 100%;
     ul {
+      height: 100%;
       gap: 40px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      align-items: center;
     }
     li {
       font-weight: bold;
       font-size: 18px;
       a {
-        color: #333;
+        color: #fff;
         letter-spacing: -0.01em;
         margin-left: 12px;
       }

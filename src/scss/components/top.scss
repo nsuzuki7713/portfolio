@@ -1,8 +1,9 @@
 .contents {
   background-color: #f3f3f3;
-  width: 80%;
   margin: auto;
-  border-radius: 20px;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  line-height: 1.7;
 }
 
 .inner {
@@ -43,13 +44,28 @@
     background-image: url(../public/img/FV/FV.png);
     background-attachment: fixed;
     background-size: cover;
+    background-position: center top;
     filter: blur(var(--blur, 0));
   }
 }
 
-.section .inner {
-  /* padding: 80px 10px; */
-  padding: 80px 10px 10px 0px;
+.sectionProfile {
+  margin: auto;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__inner {
+    padding: 80px 10px 10px 0px;
+  }
+  .section-title-block {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .section-title {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
 }
 
 .section .section-title-block {
@@ -57,40 +73,44 @@
   margin-bottom: 30px;
 }
 
-.section .section-title {
-  font-family: "Oswald", sans-serif;
-  letter-spacing: -0.01em;
+.section-title {
   display: inline-block;
-  font-size: 56px;
-  font-weight: bold;
   margin-bottom: 10px;
-  color: #444;
 }
 
 .section .section-desc {
   text-align: center;
 }
 
-.two-column-wrapper {
+.column {
   width: 80%;
-  margin: 0 auto;
-  padding: 20px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  gap: 30px;
+  margin: auto;
   display: flex;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: center;
+  &__profile {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    img {
+      width: 40%;
+      margin: 0 auto;
+      border-radius: 100%;
+    }
+  }
 }
 
-.two-column-image {
-  width: 20%;
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 1.5s,
+    transform 1s;
 }
-
-.two-column-image img {
-  margin: 0 auto;
+.fade.active {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 /*--------------------------------
@@ -374,37 +394,4 @@
     padding: 0 10px;
     margin-bottom: 5px;
   }
-
-  .profile img {
-    /* border-radius: 50%; 
-  border: 4px solid GREEN; */
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    object-fit: cover; /* ADD */
-  }
-}
-
-.profile img {
-  border-radius: 50%;
-}
-
-.contact-img {
-  border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  object-fit: cover; /* ADD */
-}
-
-.section-title-css {
-  margin-left: 12px;
-}
-
-.table {
-  text-align: center;
 }
