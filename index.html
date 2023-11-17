@@ -9,7 +9,7 @@
 
   <body>
     <script type="module" src="/src/main.ts"></script>
-    <header class="header">
+    <!-- <header class="header">
       <div class="header__inner">
         <ul>
           <li>
@@ -25,17 +25,17 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
 
     <div class="FV">
       <div class="FV__inner">
         <div id="particles-js"></div>
-        <span class="FV__title"> SaTtto </span>
       </div>
     </div>
-    <main class="contents">
-      <section class="sectionProfile" id="Profile">
-        <div class="sectionProfile__inner">
+    <span class="FV__title"> SaTtto</span>
+    <main class="contents data-scroll">
+      <section class="section" id="Profile">
+        <div class="section__inner">
           <div class="section-title-block fade">
             <div class="section-title">
               <img src="img/top/profile.svg" alt="" />
@@ -50,23 +50,21 @@
 
             <div class="column__text">
               <p class="text">
-                東京のWeb制作会社でフロントエンドエンジニアとして働いています。<br />
-                2023年7月に、未経験からエンジニア転職をしました。<br />
-                知識の定着のために情報を発信していこうと思い、このブログを作成しました。<br />
+                東京のWeb制作会社でフロントエンドエンジニアをしています。<br />
               </p>
 
               <p>▼ SKILL</p>
-              <p class="text">HTML/CSS/JavaScipt/WordPress/React/Docker/git</p>
+              <p class="text">HTML/CSS/JavaScipt/WordPress/React/Docker/Git</p>
 
-              <p class="text">▼ favorite</p>
+              <p class="text">▼ FAVORITE</p>
               <p class="text">イラスト制作/読書/映画鑑賞/ゲーム</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="works">
-        <div class="inner">
+      <div class="section" id="works">
+        <div class="section__inner">
           <div class="section-title-block">
             <h2 class="section-title">
               <img src="img/top/works.svg" alt="" />
@@ -74,83 +72,64 @@
             <div class="section-desc"></div>
           </div>
           <div class="card-wrapper my-gallery">
-            <figure class="card">
-              <!-- <a href="img/works/dammy.jpg" data-size="980x668" class="card-image"> -->
-              <img class="card-image" src="img/top/Dog_app.gif" alt="" />
-              <!-- </a> -->
-              <figcaption class="card-caption">
+            <div class="card">
+              <a
+                class="url-link"
+                href="https://github.com/SaTtto-glitch/DogImageApp"
+                target="_blank"
+              >
+                <img class="card-image" src="img/top/Dog_app.gif" alt="" />
                 <p class="card-caption-title">Dogアプリ</p>
                 <p class="card-caption-info">
                   犬の画像をランダムに生成するアプリ
                 </p>
-                <p class="card-caption-info">HTML/CSS/javascipt(React)</p>
-                <p class="card-caption-url">
-                  <a
-                    class="url-link"
-                    href="https://github.com/SaTtto-glitch/DogImageApp"
-                    target="_blank"
-                    >git hub</a
-                  >
-                </p>
-              </figcaption>
-            </figure>
+                <p class="card-caption-info">HTML/CSS/JavaScipt/React</p>
+                <p class="card-caption-url"></p>
+              </a>
+            </div>
 
-            <figure class="card">
-              <!-- <a href="img/works/dammy.jpg" data-size="980x668" class="card-image"> -->
-              <img class="card-image" src="img/top/Forum_app.gif" alt="" />
-              <!-- </a> -->
-              <figcaption class="card-caption">
-                <p class="card-caption-title">掲示板アプリ</p>
-                <p class="card-caption-info">
-                  作成したスレッドにコメントができるアプリ
-                </p>
-                <p class="card-caption-info">HTML/CSS/javascipt(React)</p>
-                <p class="card-caption-url">
-                  <a
-                    class="url-link"
-                    href="https://github.com/SaTtto-glitch/React-forum"
-                    target="_blank"
-                    >git hub</a
-                  >
-                </p>
-              </figcaption>
-            </figure>
+            <div class="card">
+              <a
+                class="url-link"
+                href="https://github.com/SaTtto-glitch/React-forum"
+                target="_blank"
+              >
+                <img class="card-image" src="img/top/Forum_app.gif" alt="" />
+                <div class="">
+                  <p class="card-caption-title">掲示板アプリ</p>
+                  <p class="card-caption-info">
+                    作成したスレッドにコメントができるアプリ
+                  </p>
+                  <p class="card-caption-info">HTML/CSS/javascipt(React)</p>
+                  <p class="card-caption-url"></p>
+                </div>
+              </a>
+            </div>
 
-            <figure class="card">
-              <!-- <a href="img/works/dammy.jpg" data-size="980x668" class="card-image"> -->
-              <img class="card-image" src="img/top/Review_app.gif" alt="" />
-              <!-- </a> -->
-              <figcaption class="card-caption">
+            <div class="card">
+              <a
+                class="url-link"
+                href="https://github.com/SaTtto-glitch/bookreview-app"
+                target="_blank"
+                ><img class="card-image" src="img/top/Review_app.gif" alt="" />
                 <p class="card-caption-title">書籍レビューアプリ</p>
                 <p class="card-caption-info">
                   書籍情報と感想を投稿できるアプリ
                 </p>
                 <p class="card-caption-info">ログイン機能を作成しました。</p>
                 <p class="card-caption-info">HTML/CSS/javascipt(React)</p>
-                <p class="card-caption-url">
-                  <a
-                    class="url-link"
-                    href="https://github.com/SaTtto-glitch/bookreview-app"
-                    target="_blank"
-                    >git hub</a
-                  >
-                </p>
-              </figcaption>
-            </figure>
+              </a>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
 
       <section class="section" id="skill">
         <div class="inner">
           <div class="section-title-block">
-            <h2 class="section-title">
-              <img src="img/top/blog.svg" alt="" />
-            </h2>
-            <p class="section-desc"></p>
-          </div>
-          <div class="card-wrapper">
-            <div class="card"></div>
+            <div class="section-title">
+              <img src="img/top/contact.svg" alt="" />
+            </div>
           </div>
         </div>
       </section>
@@ -162,6 +141,8 @@
     <!--particles-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <script src="src/js/particles.js"></script>
+    <script type="module" src="src/js/simpleParallax.js"></script>
+    <script type="module" src="src/js/smoothScroll.js"></script>
     <!--/particles-->
   </body>
 </html>
