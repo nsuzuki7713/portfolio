@@ -1,0 +1,270 @@
+.contents {
+  background-color: #f3f3f3;
+  margin: auto;
+  padding: 80px;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  line-height: 1.7;
+}
+
+.section {
+  &__inner {
+    padding: 30px 15px;
+  }
+  &__titleBlock {
+    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    &--title {
+      font-size: 36px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.inner {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  &__item {
+  }
+}
+
+.FV {
+  width: 100%;
+  background-image: url(../public/img/FV/FV.png);
+  filter: blur(var(--blur, 0));
+  background-attachment: fixed;
+  background-size: cover;
+  &__inner {
+    position: relative;
+    height: 100vh;
+  }
+  &__title {
+    font-weight: 600;
+    color: #fff;
+    font-size: 94px;
+    bottom: 0;
+    position: fixed;
+  }
+}
+
+.sectionProfile {
+  margin: auto;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__inner {
+    padding: 80px 10px 10px 0px;
+  }
+  .section-title-block {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .section-title {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+}
+
+.column {
+  gap: 30px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  &__profile {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    img {
+      width: 40%;
+      margin: 0 auto;
+      border-radius: 100%;
+    }
+  }
+}
+
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 1.5s,
+    transform 1s;
+}
+.fade.active {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.cardWrapper {
+  padding: 20px 0;
+  display: flex;
+  gap: 20px;
+
+  .card {
+    width: 32%;
+    overflow: hidden;
+    transition: all 0.6s;
+
+    &:hover {
+      transform: translateY(-10px);
+      scale: 1.1;
+    }
+
+    &__image {
+      aspect-ratio: 16 / 9;
+      margin-bottom: 8px;
+    }
+
+    &__title {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    &__info {
+      font-size: 12px;
+    }
+  }
+}
+
+/*--------------------------------
+ SKILL
+---------------------------------*/
+
+#skill .card-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#skill .card {
+  flex-basis: 46%;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#skill .card:first-child {
+  flex-basis: 100%;
+}
+
+#skill .skill-icon {
+  flex-basis: 75px;
+}
+
+#skill .skill-icon img {
+  width: 75px;
+}
+
+#skill .skill-desc {
+  flex-basis: calc(100% - 75px - 30px);
+  text-align: center;
+}
+
+#skill .skill-desc-title {
+  margin-bottom: 3px;
+  font-size: 26px;
+  padding: 24px;
+  font-weight: bold;
+}
+
+#skill .skill-desc-title i {
+  margin-right: 12px;
+}
+
+#skill .rate {
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: 20px;
+  font-size: 20px;
+}
+
+#skill .rate:before,
+#skill .rate:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "★★★★★";
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+}
+
+#skill .rate:before {
+  color: #ddd;
+}
+
+#skill .rate:after {
+  color: #808080;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#skill .rate1:after {
+  width: 20px;
+}
+
+#skill .rate2:after {
+  width: 40px;
+}
+
+#skill .rate3:after {
+  width: 60px;
+}
+
+#skill .rate4:after {
+  width: 80px;
+}
+
+#skill .rate5:after {
+  width: 100px;
+}
+
+/*media Queries 767
+----------------------------------------------------*/
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  #header {
+    height: 200px;
+  }
+  #header .logo-title {
+    font-size: 56px;
+  }
+  #header .logo-name {
+    top: 0;
+    left: -30px;
+    font-size: 25px;
+  }
+  #header .logo-desc {
+    font-size: 11px;
+  }
+}
