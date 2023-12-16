@@ -1,4 +1,5 @@
 import React from "react";
+import handleScroll from "../components/handleScroll";
 
 export const PageTop = () => {
   return (
@@ -10,37 +11,8 @@ export const PageTop = () => {
       </div>
       <span class="FV__title"> SaTtto</span>
       <div class="contents data-scroll">
-        <section class="section" id="Profile">
-          <div class="section__inner">
-            <div class="section__titleBlock fade">
-              <div class="section__titleBlock--title">
-                <img src="img/top/profile.svg" alt="" />
-              </div>
-            </div>
 
-            <div class="column fade">
-              <div class="column__profile">
-                <img src="img/top/profile.JPG" alt="" />
-                <p class="logo-title">SaTtto</p>
-              </div>
-
-              <div class="column__text">
-                <p class="text">
-                  東京のWeb制作会社でフロントエンドエンジニアをしています。
-                  <br />
-                </p>
-
-                <p>▼ Skill</p>
-                <p class="text">
-                  HTML/CSS/JavaScipt/WordPress/React/Docker/Git
-                </p>
-
-                <p class="text">▼ Favorite</p>
-                <p class="text">イラスト制作/読書/映画鑑賞/ゲーム</p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <handleScroll />
 
         <div class="section" id="works">
           <div class="section__inner">
